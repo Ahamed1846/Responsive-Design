@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", system-ui;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: row;
+}
+
+#navBar {
+  background-color: rgb(36, 36, 36);
+  padding: 30px 20px 0 20px;
+  width: 15%;
+  font-size: larger;
+}
+
+#YTlogo {
+  width: 120px;
+  padding-left: 20px;
+}
+
+#ops {
+  margin: 30px 0 15px 0;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: large;
+  background-color: rgb(83, 83, 83);
+  padding: 10px 30px;
+}
+
+.icon {
+  padding-right: 10px;
+  width: 40px;
+}
+
+.navElement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.bb {
+  border-bottom: 2px solid rgb(58, 58, 58);
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.splText {
+  color: rgb(153, 153, 153);
+}
+
+.pt {
+  padding-top: 15px;
+}
+
+.subs {
+  margin-left: 30px;
+}
+
+#mainPage {
+  margin-left: 10px;
+  flex-grow: 1; 
+}
+
+#opBar {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(58, 58, 58);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+#searchBar {
+  border: 2px solid rgb(58, 58, 58);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 2px;
+  flex-grow: 1;
+}
+
+#videoContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.videoCard {
+  background-color: rgb(45, 45, 45);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.videoCard:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.videoInfo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.profilePic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.videoDetails {
+  margin-left: 10px;
+}
+
+.videoTitle {
+  font-weight: bold;
+}
+
+.viewCount {
+  color: rgb(153, 153, 153);
+}
+
+@media (max-width: 1600px) {
+  .pfp{
+    display: none;
+  }
+  #navBar {
+    display: none;
+  }
+
+  #opBar {
+    justify-content: space-between;
+  }
+
+  #bar {
+    margin: 0;
+  }
+
+  .searchBar {
+    display: flex;
+  }
+
+  .iconContainer {
+    display: flex;
+  }
+
+  #acc {
+    display: flex;
+    margin-left: auto;
+  }
+
+  #acc .icon {
+    width: 25px;
+    padding: 0 5px;
+  }
+}
